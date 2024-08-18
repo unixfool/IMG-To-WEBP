@@ -5,5 +5,6 @@ Convertir Imágenes .jpg , .jpeg , .png en segundos a .webp Nuevo formato web.
 
 **WEBP** – Carpeta para imágenes convertidas a .webp
 
-Web: https://desarrollaria.com
-Más Info: https://desarrollaria.com/desarrollar-ia/aplicaciones/convertir-imagenes-de-jpg-jpeg-y-png-a-webp-gratis-y-sencillo
+**Web:** https://desarrollaria.com
+
+**Más Info:** https://desarrollaria.com/desarrollar-ia/aplicaciones/convertir-imagenes-de-jpg-jpeg-y-png-a-webp-gratis-y-sencillo
