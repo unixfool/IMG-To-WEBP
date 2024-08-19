@@ -43,7 +43,7 @@ def convert_images(input_folder, output_folder, log_text, resize=False, keep_asp
                                 new_width = int(new_height * aspect_ratio)
                         # Redimensionar sin mantener la proporción
                         img = img.resize((new_width, new_height), Image.Resampling.LANCZOS)
-                    img.save(output_path, "webp")
+                    img.save(output_path, "webp", quality=85)
                 log_text.insert(END, f"Convertido: {input_path} -> {output_path}\n", "log_text_style")
             except Exception as e:
                 log_text.insert(END, f"Error al convertir {input_path}: {str(e)}\n", "log_text_style")
