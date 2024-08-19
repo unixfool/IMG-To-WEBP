@@ -69,14 +69,23 @@ def start_conversion():
     output_folder = output_folder_var.get()
     resize = resize_var.get()
     keep_aspect_ratio = aspect_ratio_var.get()
-    new_width = int(width_var.get()) if width_var.get() else 0
-    new_height = int(height_var.get()) if width_var.get() else 0
+
+    # Validar y convertir valores de ancho y alto
+    try:
+        new_width = int(width_var.get().strip()) if width_var.get().strip() else 0
+    except ValueError:
+        new_width = 0
+
+    try:
+        new_height = int(height_var.get().strip()) if height_var.get().strip() else 0
+    except ValueError:
+        new_height = 0
 
     if not input_folder or not output_folder:
         messagebox.showwarning("Advertencia", "Debe seleccionar ambas carpetas (de entrada y salida).")
         return
     
-    if resize and (new_width <= 0 or new_height <= 0) and not keep_aspect_ratio:
+    if resize and (new_width <= 0 and new_height <= 0) and not keep_aspect_ratio:
         messagebox.showwarning("Advertencia", "Debe especificar dimensiones válidas para el redimensionamiento.")
         return
 
