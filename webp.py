@@ -4,7 +4,7 @@
 # Sitio web: https://desarrollaria.com
 # Cursos: https://generaria.com
 # 
-# Todos los derechos reservados © 2024.
+# Todos los derechos reservados © 2024 - 2025
 # 
 # -----------------------------------------------------------------------------
 import os
@@ -248,3 +248,4 @@ copyright_label.pack(pady=5)
 setup_tray_icon()
 
 app.mainloop()
+
